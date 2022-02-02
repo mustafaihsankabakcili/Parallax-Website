@@ -9,9 +9,8 @@ body {
     color: #666666;
 }
 
-strong,
-b {
-    font-weight: 900;
+strong {
+    color: #CF5488;
 }
 
 .background--image1 {

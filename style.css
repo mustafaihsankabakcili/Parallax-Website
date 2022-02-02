@@ -1,0 +1,136 @@
+html,
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 1rem;
+    font-family: "Lato", sans-serif;
+    color: #666666;
+}
+
+strong,
+b {
+    font-weight: 900;
+}
+
+.background--image1 {
+    background-image: url(/images/bg1.jpg);
+    min-height: 100%;
+}
+
+.background--image2 {
+    background-image: url(/images/bg2.jpg);
+    min-height: 80%;
+}
+
+.background--image3 {
+    background-image: url(/images/bg3.jpg);
+    min-height: 80%;
+}
+
+.background--image4 {
+    background-image: url(/images/bg4.jpg);
+    min-height: 80%;
+}
+
+.background--image5 {
+    background-image: url(/images/bg5.jpg);
+    min-height: 80%;
+}
+
+.background--image1,
+.background--image2,
+.background--image3,
+.background--image4,
+.background--image5 {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.heading-container {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+}
+
+.heading-container__heading {
+    background-color: black;
+    color: white;
+    opacity: 0.7;
+    padding: 2rem;
+    border-radius: 2rem 0 2rem 0;
+    outline: 0.5rem inset purple;
+    outline-offset: 1rem;
+}
+
+.heading-container__logo {
+    width: 30%;
+}
+
+.heading-container__text {
+    background-color: black;
+    color: white;
+    padding: 2rem;
+    opacity: 0.7;
+    text-transform: capitalize;
+    border-radius: 2rem 0 2rem 0;
+    outline: 0.5rem inset purple;
+    outline-offset: 0.2rem;
+}
+
+.section {
+    text-align: center;
+    padding: 3rem 5rem;
+}
+
+.section-light {
+    background-color: #F1F1F1;
+    line-height: 1.8rem;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: #F1F1F1;
+}
+
+@media screen and (max-width: 830px) {
+    .heading-container {
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+    }
+    .heading-container__logo {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .heading-container {
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+    }
+    .background--image1,
+    .background--image2,
+    .background--image3,
+    .background--image4,
+    .background--image5 {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .heading-container {
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+}
